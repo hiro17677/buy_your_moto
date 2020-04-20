@@ -15,5 +15,435 @@
  */
 
 
-@import "bootstrap";
-@import '@fortawesome/fontawesome-free';
+ @import "bootstrap" ;
+ @import '@fortawesome/fontawesome-free';
+
+
+body {
+  font-family: arial, "Microsoft JhengHei", "微軟正黑體", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+
+
+
+
+// Navbar
+
+.navbar{
+  background-color: rgba(15, 76, 129, 1);
+}
+
+.navbar-brand{
+  img{
+    weight:50px;
+    height:50px;
+    padding-right: 1rem;
+  }
+  h1{
+    font-size: 2rem;
+    padding: 1.5rem;
+    color: rgb(42, 42, 53);
+    -webkit-text-stroke: 1.2px black; //加入邊框
+    color: white;
+  }
+}
+
+// 首圖
+
+header.masthead {
+  position: relative;
+  background-color: #343a40;
+  background: url("https://i.imgur.com/XM5Rv3y.jpg") no-repeat center center;
+  background-size: cover;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+header.masthead .overlay {
+  position: absolute;
+  background-color: #212529;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+}
+
+header.masthead h1 {
+  font-size: 2rem;
+}
+
+.jumbotron{
+  background-color: rgba(15, 76, 129, 0.5);
+}
+
+#linebtn{
+  background-color: rgb(150, 79, 76);
+  color: white;
+}
+
+#phbtn{
+  background-color: rgb(136, 176, 75);
+  color: white;
+}
+
+@media (min-width: 768px) {
+  header.masthead {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+  }
+  header.masthead h1 {
+    font-size: 3rem;
+  }
+}
+
+
+// 特色
+
+.features-icons {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.features-icons-icon {
+  i {
+    color:rgb(15, 76, 129);
+  }
+}
+
+.features-icons .features-icons-item {
+  max-width: 20rem;
+}
+
+.features-icons .features-icons-item .features-icons-icon {
+  height: 7rem;
+}
+
+.features-icons .features-icons-item .features-icons-icon i {
+  font-size: 2.4rem;
+}
+
+.features-icons .features-icons-item:hover .features-icons-icon i {
+  font-size: 5rem;
+}
+
+
+// 願景
+
+.showcase .showcase-text {
+  padding: 3rem;
+}
+
+.showcase .showcase-img {
+  min-height: 30rem;
+  background-size: cover;
+}
+
+.showcase {
+  h2 {
+    color: rgb(15, 76, 129);
+  }
+}
+
+// 收購流程
+
+.service-section {
+  background-color: rgb(15, 76, 129);
+
+  h3 {
+    color: rgb(241, 238, 230);
+  }
+}
+
+.service-icon {
+  background-color: #fff;
+  color: rgb(147, 169, 209);
+  height: 7rem;
+  width: 7rem;
+  display: block;
+  line-height: 7.5rem;
+  font-size: 2.25rem;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+
+// 服務團隊
+
+.testimonials {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.testimonials .testimonial-item {
+  max-width: 18rem;
+}
+
+.testimonials .testimonial-item img {
+  max-width: 12rem;
+  box-shadow: 0px 5px 5px 0px #adb5bd;
+}
+
+// 服務項目
+
+.portfolio-item {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  max-width: 530px;
+  margin: auto auto 1rem;
+}
+
+.portfolio-item .caption {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(33, 37, 41, 0.2);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.portfolio-item .caption .caption-content {
+  color: #fff;
+  margin: auto 2rem 2rem;
+}
+
+.portfolio-item .caption .caption-content h2 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.portfolio-item .caption .caption-content p {
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+@media (min-width: 992px) {
+  .portfolio-item {
+    max-width: none;
+    margin: 0;
+  }
+  .portfolio-item .caption {
+    -webkit-transition: -webkit-clip-path 0.25s ease-out, background-color 0.7s;
+    -webkit-clip-path: inset(0px);
+    clip-path: inset(0px);
+  }
+  .portfolio-item .caption .caption-content {
+    transition: opacity 0.25s;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 5rem;
+  }
+  .portfolio-item img {
+    -webkit-transition: -webkit-clip-path 0.25s ease-out;
+    -webkit-clip-path: inset(-1px);
+    clip-path: inset(-1px);
+  }
+  .portfolio-item:hover img {
+    -webkit-clip-path: inset(2rem);
+    clip-path: inset(2rem);
+  }
+  .portfolio-item:hover .caption {
+    background-color: rgba(29, 128, 159, 0.9);
+    -webkit-clip-path: inset(2rem);
+    clip-path: inset(2rem);
+  }
+}
+
+
+// 用戶反饋
+
+.feedback-box {
+  /* 区块 */
+  background-color: #fff;
+  text-align: center;
+  padding: 50px 0 125px 0;
+  .item{
+    /* 标题 */
+    strong {
+      margin-top: 25px;
+      color: #4A6BB5;
+    }
+
+    /* 图片 */
+    img {
+      width: 80px;
+      margin: 0 auto 25px auto;
+      border-radius: 50%;
+      border: 2px solid #ccc;
+    }
+
+    /* 文字 */
+    p {
+      color: #666;
+      max-width: 550px;
+      margin: 0 auto 25px auto;
+    }
+
+    /* 按钮设置 */
+  }
+  .carousel-indicators {
+    bottom: -70px; //按钮位置
+
+    /* 按钮 */
+    li {
+      background-color: #ddd;
+      height: 12.5px;
+      width: 12.5px;
+      margin: 0 5px;
+      border-radius: 0;
+
+      /* 按钮转向45度 */
+      -moz-transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+
+    /* 按钮-启动效果 */
+    li.active {
+      background-color: #4A6BB5;
+    }
+  }
+}
+
+// CTA
+
+.call-to-action {
+  h2 {
+    padding: 2rem;
+  }
+
+}
+
+// footer
+
+footer.footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: rgb(15, 76, 129);
+}
+
+.footer{
+  h4{
+      font-size: 1.5rem;
+      padding: 1.5rem;
+      color: white;
+  }
+  li{
+    font-size: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    color: white;
+  }
+  a{
+    color: white;
+  }
+  p{
+    padding: 1.5rem;
+    color: white;
+  }
+}
+
+.rights{
+  img{
+    weight:50px;
+    height:50px;
+    padding-right: 1rem;
+  }
+  h1{
+    font-size: 2rem;
+    padding: 1.5rem;
+    color: rgb(42, 42, 53);
+    -webkit-text-stroke: 1.2px black; //加入邊框
+    color: white;
+  }
+}
+
+.bg-primary {
+  background-color: #1D809F !important;
+}
+
+.text-primary {
+  color: white !important;
+}
+
+// scroll-to-top
+.goTop {
+  height: 35px;
+  width: 35px;
+  top: 80%;
+  right: 35px;
+  position: fixed;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px #666;
+
+    i {
+      color: #000;
+      font-size: 20px;
+      position: absolute;
+      top: 7px;
+    }
+}
+
+.goTop:hover {
+    background-color: #f0f0f0;
+
+    i{
+      color: #eb5424;
+    }
+  }
+
+
+// contact-section
+
+.contact-section {
+  background-color: rgba(181, 199, 211, 1);
+}
+
+h2 {
+  padding-top: 2rem;
+}
+
+hr.divider {
+  max-width: 7.25rem;
+  border-width: 0.2rem;
+  border-color: rgb(15, 76, 129);
+}
+
+// about-section
+.about {
+  p {
+    font-size: 1.5rem;
+  }
+}
+
+
+
+
+
+
+
+
+// ---google map--
+  #map {
+    width:80%; //寬，必須要有！
+    height:450px; //高，必須要有！
+    margin: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    }

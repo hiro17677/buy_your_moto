@@ -1,0 +1,37 @@
+<section class="contact-section" id="about">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 text-center">
+        <h2 class="text-dark mt-0">貳輪嶼二手機車高雄店</h2>
+        <hr class="divider light my-4">
+        <h3 class="text-dark mt-0">聯絡方式</h3>
+        <hr class="divider light my-4">
+        <div class="col-lg-12 justify-content-center font-weight-bold">
+        <p class="text-dark-50 mb-4 text-left">聯絡電話：<a href="tel:+886-966-747-014">0952-092-978</a>(點擊撥號)</p>
+        <p class="text-dark-50 mb-4 text-left">加入Line:<a href="https://lin.ee/gwqL36M">@motor888</a>(點擊加入)</p>
+        <p class="text-dark-50 mb-4 text-left">臉書專頁：<a href="https://www.facebook.com/twomotorislandKaohsiung">高價專業收購中古二手機車線上估價網</a>(點擊進入)</p>
+        <p class="text-dark-50 mb-4 text-left">地址：高雄鳳山區武營路132-1號(近鳳山監理站，約600m同一條路上)</p>
+        </div>
+      </div>
+      <div id="map">
+      </div>
+    </div>
+  </div>
+</section>
+
+        <script>
+          function initMap() {
+            var uluru = {lat: 22.608875, lng: 120.337773};
+            var map = new google.maps.Map(document.getElementById('map'), {
+              zoom: 18,
+              center: uluru
+            });
+            var marker = new google.maps.Marker({
+              position: uluru,
+              map: map
+            });
+          }
+        </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrDH4440GJiFyJYiDboAgsdjlTaVXBEEw&callback=initMap">
+    </script>

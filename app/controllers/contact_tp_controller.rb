@@ -1,0 +1,2 @@
+class ContactTpController < ApplicationController
+end
