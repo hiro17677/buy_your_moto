@@ -12,7 +12,19 @@ import "bootstrap";
 import "../stylesheets/application";
 import "@fortawesome/fontawesome-free/js/all";
 
+// 回到頁面頂端
+$(window).scroll(function () {
+  if ($(this).scrollTop() > 1500) {
+    $(".goTop").fadeIn(100);
+  } else {
+    $(".goTop").fadeOut(200);
+  }
 
+    $(".goTop").click(
+    function() {
+      $('html,body').scrollTop(0);
+    });
+})
 
 // Uncomment to copy all static images under ../images to the output folder and reference
 // them with the image_pack_tag helper in views (e.g <%= image_pack_tag 'rails.png' %>)
